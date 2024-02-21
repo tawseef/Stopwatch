@@ -35,10 +35,10 @@ export default function stopWatch() {
   };
 
   return (
-    <div>
+    <div style={{padding: "10px"}}>
       <h1>Stopwatch</h1>
       <p>Time: {formatTime(timer)}</p>
-      <button onClick={start}> {active ? "stop" : "start"} </button>
+      <button onClick={start}> {active ? "Stop" : "Start"} </button>
       <button onClick={reset}> Reset </button>
     </div>
   );
